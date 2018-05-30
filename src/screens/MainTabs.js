@@ -14,9 +14,9 @@ const startTabs = () => {
         title: 'Find your job'
       },
       {
-        screen: 'jobs.ReviewScreen',
-        label: 'Review',
-        title: 'Review'
+        screen: 'jobs.DeckScreen',
+        label: 'Deck',
+        title: 'Deck'
       }
     ]
   })
