@@ -20,7 +20,7 @@ class MapScreen extends Component {
   }
 
   onButtonPress = () => {
-    this.props.fetchJobs(this.state.region);
+    this.props.onFetchJobs(this.state.region);
   }
 
   render() {
@@ -51,7 +51,7 @@ const styles = StyleSheet.create({
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    onFetchJobs: (authData, authMode) => dispatch(fetchJobs())
+    onFetchJobs: (region) => dispatch(fetchJobs(region))
   };
 };
 

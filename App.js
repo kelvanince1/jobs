@@ -6,7 +6,7 @@ import WelcomeScreen from './src/screens/WelcomeScreen';
 import ReviewScreen from './src/screens/ReviewScreen';
 import MapScreen from './src/screens/MapScreen';
 import DeckScreen from './src/screens/DeckScreen';
-import configureStore from './src/reducers/ConfigureStore';
+import configureStore from './src/reducers/configureStore';
 
 const store = configureStore();
 
