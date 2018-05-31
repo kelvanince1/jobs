@@ -1,4 +1,4 @@
-import { FETCH_JOBS, PLACE_ADDED, START_ADD_JOB } from '../actions/types';
+import { FETCH_JOBS, JOB_ADDED, START_ADD_JOB } from '../actions/types';
 
 const INITIAL_STATE = {
   results: [],
@@ -14,7 +14,7 @@ export default function(state = INITIAL_STATE, action) {
         ...state,
         jobAdded: false
       }
-    case PLACE_ADDED:
+    case JOB_ADDED:
       return {
         ...state,
         jobAdded: true
