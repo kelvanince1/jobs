@@ -21,7 +21,7 @@ class MapScreen extends Component {
   }
 
   componentDidUpdate() {
-    if (this.props.placeAdded) {
+    if (this.props.jobAdded) {
       this.props.navigator.switchToTab({ tabIndex: 2 });
     }
   }

@@ -2,7 +2,7 @@ import axios from 'axios';
 import reverseGeocode from 'latlng-to-zip';
 import qs from 'qs';
 
-import { FETCH_JOBS, PLACE_ADDED, START_ADD_JOB } from './types';
+import { FETCH_JOBS, JOB_ADDED, START_ADD_JOB } from './types';
 import { URL } from './config';
 
 const JOB_ROOT_URL = URL;
@@ -44,6 +44,6 @@ export const fetchJobs = (region) => async (dispatch) => {
 
 export const jobAdded = () => {
   return {
-    type: PLACE_ADDED
+    type: JOB_ADDED
   };
 };
