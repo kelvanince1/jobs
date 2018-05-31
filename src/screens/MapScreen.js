@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import { View, StyleSheet, Button } from 'react-native';
 import MapView from 'react-native-maps';
+import { connect } from 'react-redux';
+
+import * as actions from '../actions'
 
 class MapScreen extends Component {
   state = {
@@ -41,4 +44,4 @@ const styles = StyleSheet.create({
   }
 })
 
-export default MapScreen;
+export default connect(null, { actions.fetchJobs })(MapScreen);
