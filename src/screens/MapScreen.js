@@ -12,6 +12,10 @@ class MapScreen extends Component {
     }
   }
 
+  onRegionChangeComplete = (region) => {
+    this.setState({ region: region })
+  }
+
   render() {
     return (
       <View>
