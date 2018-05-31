@@ -3,7 +3,7 @@ import { View, StyleSheet, Button } from 'react-native';
 import MapView from 'react-native-maps';
 import { connect } from 'react-redux';
 
-import * as actions from '../actions'
+import { fetchJobs } from '../actions/jobActions'
 
 class MapScreen extends Component {
   state = {
@@ -19,6 +19,10 @@ class MapScreen extends Component {
     this.setState({ region: region })
   }
 
+  onButtonPress = () => {
+    this.props.fetchJobs(this.state.region);
+  }
+
   render() {
     return (
       <View>
@@ -31,6 +35,7 @@ class MapScreen extends Component {
             large
             title='Search this area'
             backgroundColor='#009688'
+            onPress={this.onButtonPress}
           />
       </View>
     );
@@ -42,6 +47,12 @@ const styles = StyleSheet.create({
     width: "100%",
     height: "92%"
   }
-})
+});
 
-export default connect(null, { actions.fetchJobs })(MapScreen);
+const mapDispatchToProps = (dispatch) => {
+  return {
+    onFetchJobs: (authData, authMode) => dispatch(fetchJobs())
+  };
+};
+
+export default connect(null, mapDispatchToProps)(MapScreen);

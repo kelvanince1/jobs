@@ -18,10 +18,10 @@ const JOB_QUERY_PARAMS = {
 
 const buildJobsUrl = (zip) => {
   const query = qs.stringify({ ...JOB_QUERY_PARAMS, l: zip });
-  return `${JOB_ROOT_URL}${query}`;
-}
+  return `${JOB_ROOT_URL}${query}`
+};
 
-export const fetchJobs = (region) async (dispatch) => {
+export const fetchJobs = (region) => async (dispatch) => {
   try {
     let zip = await reverseGeocode(region);
     const url = buildJobsUrl(zip);
