@@ -1,7 +1,25 @@
 import axios from 'axios';
 import reverseGeocode from 'latlng-to-zip';
+import qs from 'qs';
 
 import { FETCH_JOBS } from './types';
+import { URL } from './config';
+
+const JOB_ROOT_URL = URL;
+
+const JOB_QUERY_PARAMS = {
+  publisher: '7806755316967714',
+  format: 'json',
+  v: '2',
+  latlong: 1,
+  radius: 10,
+  q: 'javascript'
+};
+
+const buildJobsUrl = (zip) => {
+  const query = qs.stringify({ ...JOB_QUERY_PARAMS, l: zip });
+  return `${JOB_ROOT_URL}${query}`;
+}
 
 export const fetchJobs = (region) async (dispatch) => {
   try {
