@@ -3,9 +3,14 @@ import { View, StyleSheet, Button } from 'react-native';
 import MapView from 'react-native-maps';
 import { connect } from 'react-redux';
 
-import { fetchJobs } from '../actions/jobActions'
+import { fetchJobs, startAddJob, jobAdded } from '../actions/jobActions'
 
 class MapScreen extends Component {
+  constructor(props) {
+    super(props);
+    this.props.navigator.setOnNavigatorEvent(this.onNavigatorEvent);
+  }
+
   state = {
     region: {
       longitude: -122.431297,
@@ -14,6 +19,20 @@ class MapScreen extends Component {
       latitudeDelta: 0.09
     }
   }
+
+  componentDidUpdate() {
+    if (this.props.placeAdded) {
+      this.props.navigator.switchToTab({ tabIndex: 2 });
+    }
+  }
+
+  onNavigatorEvent = event => {
+    if (event.type === "ScreenChangedEvent") {
+      if (event.id === "willAppear") {
+        this.props.onStartAddJob();
+      }
+    }
+  };
 
   onRegionChangeComplete = (region) => {
     this.setState({ region: region })
@@ -49,10 +68,17 @@ const styles = StyleSheet.create({
   }
 });
 
+const mapStateToProps = (state) => {
+  return {
+    jobAdded: state.jobs.jobAdded
+  }
+}
+
 const mapDispatchToProps = (dispatch) => {
   return {
-    onFetchJobs: (region) => dispatch(fetchJobs(region))
+    onFetchJobs: (region) => dispatch(fetchJobs(region)),
+    onStartAddJob: () => dispatch(startAddJob())
   };
 };
 
-export default connect(null, mapDispatchToProps)(MapScreen);
+export default connect(mapStateToProps, mapDispatchToProps)(MapScreen);

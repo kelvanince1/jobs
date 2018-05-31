@@ -2,7 +2,7 @@ import axios from 'axios';
 import reverseGeocode from 'latlng-to-zip';
 import qs from 'qs';
 
-import { FETCH_JOBS } from './types';
+import { FETCH_JOBS, PLACE_ADDED, START_ADD_JOB } from './types';
 import { URL } from './config';
 
 const JOB_ROOT_URL = URL;
@@ -21,6 +21,12 @@ const buildJobsUrl = (zip) => {
   return `${JOB_ROOT_URL}${query}`
 };
 
+export const startAddJob = () => {
+  return {
+    type: START_ADD_JOB
+  };
+};
+
 export const fetchJobs = (region) => async (dispatch) => {
   try {
     let zip = await reverseGeocode(region);
@@ -30,7 +36,14 @@ export const fetchJobs = (region) => async (dispatch) => {
       type: FETCH_JOBS,
       payload: data
     });
+    dispatch(jobAdded());
   } catch(e) {
     console.error(e);
   }
+};
+
+export const jobAdded = () => {
+  return {
+    type: PLACE_ADDED
+  };
 };
