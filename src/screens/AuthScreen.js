@@ -4,6 +4,7 @@ import { View, Text, Button, Dimensions, StyleSheet } from 'react-native';
 import startMainTabs from './MainTabs';
 import AuthInput from '../components/AuthInput';
 import validate from '../utility/validation';
+import backgroundImage from '../assets/wall.jpg';
 
 class AuthScreen extends Component {
   state = {
@@ -78,7 +79,8 @@ class AuthScreen extends Component {
 
   render() {
     return(
-      <View>
+      <View style={styles.backgroundStyle}>
+        <Text>Please Log In</Text>
         <AuthInput
           placeholder='Your Email address'
           style={styles.input}
@@ -125,7 +127,8 @@ const styles = StyleSheet.create({
   },
   backgroundStyle: {
     width: '100%',
-    flex: 1
+    flex: 1,
+    backgroundColor: '#B5E5F0'
   },
   inputContainer: {
     width: '80%'
