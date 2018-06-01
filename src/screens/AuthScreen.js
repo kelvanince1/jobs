@@ -4,7 +4,6 @@ import { View, Text, Button, Dimensions, StyleSheet } from 'react-native';
 import startMainTabs from './MainTabs';
 import AuthInput from '../components/AuthInput';
 import validate from '../utility/validation';
-import backgroundImage from '../assets/wall.jpg';
 
 class AuthScreen extends Component {
   state = {
