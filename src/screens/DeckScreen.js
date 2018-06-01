@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, Platform } from 'react-native';
 import { connect } from 'react-redux';
+import { Card, Button, Icon } from 'react-native-elements';
+import MapView from 'react-native-maps';
 
 import Swipe from '../components/Swipe';
 
@@ -35,17 +37,38 @@ class DeckScreen extends Component {
     )
   }
 
+  renderNoMoreCards = () => {
+    return (
+      <Card title="No more jobs">
+        <Button
+          title="Back To Map"
+          large
+          backgroundColor="#03A9F4"
+        />
+      </Card>
+    );
+  }
+
   render() {
     return (
       <View>
         <Swipe
           data={this.props.jobs}
           renderCard={this.renderCard}
+          renderNoMoreCards={this.renderNoMoreCards}
         />
       </View>
     );
   };
 };
+
+const styles = {
+  detailWrapper: {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    marginBottom: 10
+  }
+}
 
 const mapStateToProps = (state) => {
   return {
