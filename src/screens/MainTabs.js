@@ -16,8 +16,13 @@ const startTabs = () => {
       {
         screen: 'jobs.DeckScreen',
         label: 'Deck',
-        title: 'Deck'
-      }
+        title: 'Swipe right if you like'
+      },
+      {
+        screen: 'jobs.ReviewScreen',
+        label: 'Review',
+        title: 'Your liked jobs'
+      },
     ]
   })
 };
