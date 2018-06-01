@@ -3,6 +3,7 @@ import { View, Text, Button, Dimensions, StyleSheet } from 'react-native';
 
 import startMainTabs from './MainTabs';
 import AuthInput from '../components/AuthInput';
+import validate from '../utility/validation';
 
 class AuthScreen extends Component {
   state = {
@@ -40,6 +41,41 @@ class AuthScreen extends Component {
     startMainTabs();
   };
 
+  updateInputState = (key, value) => {
+    let connectedValue = {};
+    if (this.state.controls[key].validationRules.equalTo) {
+      const equalControl = this.state.controls[key].validationRules.equalTo;
+      const equalValue = this.state.controls[equalControl].value;
+      connectedValue = {
+        ...connectedValue,
+        equalTo: equalValue
+      };
+    }
+    if (key === 'password') {
+      connectedValue = {
+        ...connectedValue,
+        equalTo: value
+      }
+    }
+    this.setState(prevState => {
+      return {
+        controls: {
+          ...prevState.controls,
+          confirmPassword: {
+            ...prevState.controls.confirmPassword,
+            valid: key === 'password' ? validate(prevState.controls.confirmPassword.value, prevState.controls.confirmPassword.validationRules, connectedValue) : prevState.controls.confirmPassword.valid
+          },
+          [key]: {
+            ...prevState.controls[key],
+            value: value,
+            valid: validate(value, prevState.controls[key].validationRules, connectedValue),
+            touchedValue: true
+          },
+        }
+      }
+    });
+  }
+
   render() {
     return(
       <View>
@@ -49,6 +85,7 @@ class AuthScreen extends Component {
           value={this.state.controls.email.value}
           valid={this.state.controls.email.valid}
           touched={this.state.controls.email.touched}
+          onChangeText={(val) => this.updateInputState('email', val)}
           autoCapitalize='none'
           autoCorrect={false}
           keyboardType='email-address'
@@ -67,6 +104,7 @@ class AuthScreen extends Component {
           placeholder='Password'
           style={styles.input}
           value={this.state.controls.password.value}
+          onChangeText={(val) => this.updateInputState('password', val)}
           valid={this.state.controls.password.valid}
           touched={this.state.controls.password.touched}
           secureTextEntry
