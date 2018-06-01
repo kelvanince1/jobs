@@ -1,0 +1,23 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "78C4402F1E2D14D3B6BA5D3184DCEDDFA5BE5E42",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "78C4402F1E2D14D3B6BA5D3184DCEDDFA5BE5E42" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "92828525-4144-4ECC-8F9C-79AC2D60BCDC",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "78C4402F1E2D14D3B6BA5D3184DCEDDFA5BE5E42" : "jobs\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "jobs",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ios\/jobs.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/kelvanince1\/jobs.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "78C4402F1E2D14D3B6BA5D3184DCEDDFA5BE5E42"
+    }
+  ]
+}

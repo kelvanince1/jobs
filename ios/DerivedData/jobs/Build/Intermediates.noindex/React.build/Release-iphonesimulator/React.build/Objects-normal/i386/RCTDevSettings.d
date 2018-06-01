@@ -1,0 +1,20 @@
+dependencies: \
+  /Users/kelvanince/Projects/jobs/node_modules/react-native/React/Modules/RCTDevSettings.mm \
+  /Users/kelvanince/Projects/jobs/node_modules/react-native/React/Modules/RCTDevSettings.h \
+  /Users/kelvanince/Projects/jobs/node_modules/react-native/React/Base/RCTBridge.h \
+  /Users/kelvanince/Projects/jobs/node_modules/react-native/React/Base/RCTBridgeDelegate.h \
+  /Users/kelvanince/Projects/jobs/node_modules/react-native/React/Base/RCTJavaScriptLoader.h \
+  /Users/kelvanince/Projects/jobs/node_modules/react-native/React/Base/RCTDefines.h \
+  /Users/kelvanince/Projects/jobs/node_modules/react-native/React/Base/RCTBridgeModule.h \
+  /Users/kelvanince/Projects/jobs/node_modules/react-native/React/Base/RCTFrameUpdate.h \
+  /Users/kelvanince/Projects/jobs/node_modules/react-native/React/Base/RCTInvalidating.h \
+  /Users/kelvanince/Projects/jobs/ios/DerivedData/jobs/Build/Products/Release-iphonesimulator/include/jschelpers/JavaScriptCore.h \
+  /Users/kelvanince/Projects/jobs/ios/DerivedData/jobs/Build/Products/Release-iphonesimulator/include/jschelpers/JSCWrapper.h \
+  /Users/kelvanince/Projects/jobs/node_modules/react-native/React/Base/RCTBridge+Private.h \
+  /Users/kelvanince/Projects/jobs/node_modules/react-native/React/Base/RCTEventDispatcher.h \
+  /Users/kelvanince/Projects/jobs/node_modules/react-native/React/Modules/RCTJSCSamplingProfiler.h \
+  /Users/kelvanince/Projects/jobs/node_modules/react-native/React/Base/RCTLog.h \
+  /Users/kelvanince/Projects/jobs/node_modules/react-native/React/Base/RCTAssert.h \
+  /Users/kelvanince/Projects/jobs/node_modules/react-native/React/Base/RCTUtils.h \
+  /Users/kelvanince/Projects/jobs/node_modules/react-native/React/DevSupport/RCTPackagerClient.h \
+  /Users/kelvanince/Projects/jobs/node_modules/react-native/React/Profiler/RCTProfile.h

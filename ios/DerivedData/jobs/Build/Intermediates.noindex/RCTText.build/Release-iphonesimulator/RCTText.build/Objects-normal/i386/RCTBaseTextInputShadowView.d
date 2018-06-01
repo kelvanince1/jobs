@@ -1,0 +1,37 @@
+dependencies: \
+  /Users/kelvanince/Projects/jobs/node_modules/react-native/Libraries/Text/TextInput/RCTBaseTextInputShadowView.m \
+  /Users/kelvanince/Projects/jobs/node_modules/react-native/Libraries/Text/TextInput/RCTBaseTextInputShadowView.h \
+  /Users/kelvanince/Projects/jobs/node_modules/react-native/Libraries/Text/BaseText/RCTBaseTextShadowView.h \
+  /Users/kelvanince/Projects/jobs/ios/DerivedData/jobs/Build/Products/Release-iphonesimulator/include/React/RCTShadowView.h \
+  /Users/kelvanince/Projects/jobs/ios/DerivedData/jobs/Build/Products/Release-iphonesimulator/include/React/RCTComponent.h \
+  /Users/kelvanince/Projects/jobs/ios/DerivedData/jobs/Build/Products/Release-iphonesimulator/include/React/RCTLayout.h \
+  /Users/kelvanince/Projects/jobs/ios/DerivedData/jobs/Build/Products/Release-iphonesimulator/include/React/RCTDefines.h \
+  /Users/kelvanince/Projects/jobs/ios/DerivedData/jobs/Build/Products/Release-iphonesimulator/include/yoga/Yoga.h \
+  /Users/kelvanince/Projects/jobs/ios/DerivedData/jobs/Build/Products/Release-iphonesimulator/include/yoga/YGEnums.h \
+  /Users/kelvanince/Projects/jobs/ios/DerivedData/jobs/Build/Products/Release-iphonesimulator/include/yoga/YGMacros.h \
+  /Users/kelvanince/Projects/jobs/ios/DerivedData/jobs/Build/Products/Release-iphonesimulator/include/React/RCTRootView.h \
+  /Users/kelvanince/Projects/jobs/ios/DerivedData/jobs/Build/Products/Release-iphonesimulator/include/React/RCTBridge.h \
+  /Users/kelvanince/Projects/jobs/ios/DerivedData/jobs/Build/Products/Release-iphonesimulator/include/React/RCTBridgeDelegate.h \
+  /Users/kelvanince/Projects/jobs/ios/DerivedData/jobs/Build/Products/Release-iphonesimulator/include/React/RCTJavaScriptLoader.h \
+  /Users/kelvanince/Projects/jobs/ios/DerivedData/jobs/Build/Products/Release-iphonesimulator/include/React/RCTBridgeModule.h \
+  /Users/kelvanince/Projects/jobs/ios/DerivedData/jobs/Build/Products/Release-iphonesimulator/include/React/RCTFrameUpdate.h \
+  /Users/kelvanince/Projects/jobs/ios/DerivedData/jobs/Build/Products/Release-iphonesimulator/include/React/RCTInvalidating.h \
+  /Users/kelvanince/Projects/jobs/node_modules/react-native/Libraries/Text/RCTTextAttributes.h \
+  /Users/kelvanince/Projects/jobs/ios/DerivedData/jobs/Build/Products/Release-iphonesimulator/include/React/RCTTextDecorationLineType.h \
+  /Users/kelvanince/Projects/jobs/ios/DerivedData/jobs/Build/Products/Release-iphonesimulator/include/React/RCTShadowView+Layout.h \
+  /Users/kelvanince/Projects/jobs/ios/DerivedData/jobs/Build/Products/Release-iphonesimulator/include/React/RCTUIManager.h \
+  /Users/kelvanince/Projects/jobs/ios/DerivedData/jobs/Build/Products/Release-iphonesimulator/include/React/RCTViewManager.h \
+  /Users/kelvanince/Projects/jobs/ios/DerivedData/jobs/Build/Products/Release-iphonesimulator/include/React/RCTConvert.h \
+  /Users/kelvanince/Projects/jobs/ios/DerivedData/jobs/Build/Products/Release-iphonesimulator/include/React/RCTAnimationType.h \
+  /Users/kelvanince/Projects/jobs/ios/DerivedData/jobs/Build/Products/Release-iphonesimulator/include/React/RCTBorderStyle.h \
+  /Users/kelvanince/Projects/jobs/ios/DerivedData/jobs/Build/Products/Release-iphonesimulator/include/React/RCTLog.h \
+  /Users/kelvanince/Projects/jobs/ios/DerivedData/jobs/Build/Products/Release-iphonesimulator/include/React/RCTAssert.h \
+  /Users/kelvanince/Projects/jobs/ios/DerivedData/jobs/Build/Products/Release-iphonesimulator/include/React/RCTUtils.h \
+  /Users/kelvanince/Projects/jobs/ios/DerivedData/jobs/Build/Products/Release-iphonesimulator/include/React/RCTPointerEvents.h \
+  /Users/kelvanince/Projects/jobs/ios/DerivedData/jobs/Build/Products/Release-iphonesimulator/include/React/RCTEventDispatcher.h \
+  /Users/kelvanince/Projects/jobs/ios/DerivedData/jobs/Build/Products/Release-iphonesimulator/include/React/UIView+React.h \
+  /Users/kelvanince/Projects/jobs/node_modules/react-native/Libraries/Text/Text/NSTextStorage+FontScaling.h \
+  /Users/kelvanince/Projects/jobs/node_modules/react-native/Libraries/Text/TextInput/RCTBaseTextInputView.h \
+  /Users/kelvanince/Projects/jobs/ios/DerivedData/jobs/Build/Products/Release-iphonesimulator/include/React/RCTView.h \
+  /Users/kelvanince/Projects/jobs/node_modules/react-native/Libraries/Text/TextInput/RCTBackedTextInputDelegate.h \
+  /Users/kelvanince/Projects/jobs/node_modules/react-native/Libraries/Text/TextInput/RCTBackedTextInputViewProtocol.h
