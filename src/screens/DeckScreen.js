@@ -5,6 +5,7 @@ import { Card, Button, Icon } from 'react-native-elements';
 import MapView from 'react-native-maps';
 
 import Swipe from '../components/Swipe';
+import { likeJob } from '../actions/jobActions';
 
 class DeckScreen extends Component {
   renderCard(job) {
@@ -57,6 +58,7 @@ class DeckScreen extends Component {
           renderCard={this.renderCard}
           renderNoMoreCards={this.renderNoMoreCards}
           keyProp='jobkey'
+          onSwipeRight={job => this.props.onLikeJob(job)}
         />
       </View>
     );
@@ -74,6 +76,12 @@ const styles = {
 const mapStateToProps = (state) => {
   return {
     jobs: state.jobs.results
+  }
+}
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    onLikeJob: (job) => dispatch(likeJob(job))
   }
 }
 
