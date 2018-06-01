@@ -2,9 +2,11 @@ import { createStore, combineReducers, compose, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 
 import jobReducer from './jobReducer';
+import likesReducer from './likesReducer';
 
 const rootReducer = combineReducers({
-  jobs: jobReducer
+  jobs: jobReducer,
+  likes: likesReducer
 });
 
 let composeEnhancers = compose;
