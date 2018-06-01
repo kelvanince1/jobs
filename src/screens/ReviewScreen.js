@@ -4,8 +4,11 @@ import { Button, Card, Icon } from 'react-native-elements';
 import { connect } from 'react-redux';
 import MapView from 'react-native-maps';
 
+import { clearLikedJobs } from '../actions/jobActions';
+
 class ReviewScreen extends Component {
   renderLikedJobs() {
+
     return this.props.likes.map(job => {
       const initialRegion = {
         longitude: job.longitude,
@@ -38,9 +41,16 @@ class ReviewScreen extends Component {
 
   render() {
     return (
-      <ScrollView>
-        {this.renderLikedJobs()}
-      </ScrollView>
+      <View>
+        <Button
+          title="Reset Like Jobs"
+          backgroundColor="#F44336"
+          onPress={this.props.onClearJobs}
+        />
+        <ScrollView>
+          {this.renderLikedJobs()}
+        </ScrollView>
+      </View>
     );
   }
 }
@@ -57,8 +67,16 @@ const styles = {
   }
 }
 
-function mapStateToProps(state) {
-  return { likes: state.likes };
+const mapStateToProps = (state) => {
+  return {
+    likes: state.likes
+  };
 }
 
-export default connect(mapStateToProps)(ReviewScreen);
+const mapDispatchToProps = (dispatch) => {
+  return {
+    onClearJobs: () => dispatch(clearLikedJobs())
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(ReviewScreen);
