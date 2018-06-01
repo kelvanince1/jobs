@@ -14,7 +14,7 @@ class ReviewScreen extends Component {
         longitudeDelta: 0.02
       }
       return (
-        <Card>
+        <Card title={job.jobtitle} key={job.jobkey}>
           <View style={{ height: 200 }}>
             <MapView
               style={{ flex: 1 }}
@@ -28,7 +28,7 @@ class ReviewScreen extends Component {
             <Button
               title="Apply Now"
               backgroundColor="#03A9F4"
-              onPress={() => Linking.openURL(job.url)}
+              onPress={() => Linking.openURL(url)}
             />
           </View>
         </Card>
