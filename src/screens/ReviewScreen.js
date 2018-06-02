@@ -31,7 +31,7 @@ class ReviewScreen extends Component {
             <Button
               title="Apply Now"
               backgroundColor="#03A9F4"
-              onPress={() => Linking.openURL(url)}
+              onPress={() => Linking.openURL(job.url)}
             />
           </View>
         </Card>
