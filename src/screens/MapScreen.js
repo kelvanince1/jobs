@@ -64,7 +64,7 @@ class MapScreen extends Component {
 const styles = StyleSheet.create({
   map: {
     width: "100%",
-    height: "92%"
+    height: "91%"
   }
 });
 
