@@ -6,22 +6,22 @@ const startTabs = () => {
       {
         screen: 'jobs.WelcomeScreen',
         label: 'Welcome',
-        title: 'Welcome'
+        title: ''
       },
       {
         screen: 'jobs.MapScreen',
         label: 'Find your job',
-        title: 'Find your job'
+        title: ''
       },
       {
         screen: 'jobs.DeckScreen',
         label: 'Deck',
-        title: 'Swipe right if you like'
+        title: ''
       },
       {
         screen: 'jobs.ReviewScreen',
         label: 'Review',
-        title: 'Your liked jobs'
+        title: ''
       },
     ]
   })
