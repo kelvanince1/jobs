@@ -43,7 +43,7 @@ class ReviewScreen extends Component {
     return (
       <View>
         <Button
-          title="Reset Like Jobs"
+          title="Reset Liked Jobs"
           backgroundColor="#F44336"
           onPress={this.props.onClearJobs}
         />
