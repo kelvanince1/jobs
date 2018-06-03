@@ -17,7 +17,7 @@ class DeckScreen extends Component {
     }
     return (
       <Card title={job.jobtitle}>
-        <View style={{ height: 200 }}>
+        <View style={{ height: 150 }}>
           <MapView
             scrollEnabled={false}
             style={{ flex: 1 }}
