@@ -37,6 +37,22 @@ class AuthScreen extends Component {
     }
   };
 
+  constructor(props) {
+    super(props);
+    Dimensions.addEventListener("change", this.updateStyles);
+  }
+
+  componentWillUnmount() {
+    Dimensions.removeEventListener('change', this.updateStyles);
+  }
+
+  updateStyles = (dims) => {
+    this.setState({
+      viewMode:
+        dims.window.height > 500 ? 'portrait' : 'landscape'
+    })
+  }
+
   loginHandler = () => {
     startMainTabs();
   };
@@ -78,8 +94,8 @@ class AuthScreen extends Component {
 
   render() {
     return(
-      <View style={styles.backgroundStyle}>
-        <Text>Please Log In</Text>
+      <View style={styles.container}>
+        <Text style={styles.textStyle}>Please Log In</Text>
         <AuthInput
           placeholder='Your Email address'
           style={styles.input}
@@ -112,7 +128,7 @@ class AuthScreen extends Component {
         />
         </View>
       </View>
-        <Button title="Log In" onPress={this.loginHandler} />
+        <Button title="Log In" large onPress={this.loginHandler} />
       </View>
     );
   };
@@ -122,6 +138,15 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
+    alignItems: 'center',
+    width: "100%",
+    height: "92%",
+    backgroundColor: '#B5E5F0',
+    flexDirection: 'column'
+  },
+  textStyle: {
+    fontSize: 16,
+    color: 'white',
     alignItems: 'center'
   },
   backgroundStyle: {

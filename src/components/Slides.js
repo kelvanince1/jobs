@@ -4,19 +4,6 @@ import { View, Text, ScrollView, Dimensions, Button } from 'react-native';
 const SCREEN_WIDTH = Dimensions.get('window').width;
 
 class Slides extends Component {
-  renderLastSlide(index) {
-    if (index === this.props.data.length - 1) {
-      return (
-        <Button
-          buttonStyle={styles.buttonStyle}
-          onPress={this.props.onComplete}
-          title="Let's go!"
-          raised
-        />
-      )
-    }
-  }
-
   renderSlides() {
     return this.props.data.map((slide, index) => {
       return (
@@ -25,7 +12,6 @@ class Slides extends Component {
           style={[ styles.slideStyle, {backgroundColor: slide.color }]}
         >
           <Text style={styles.textStyle}>{slide.text}</Text>
-          {this.renderLastSlide(index)}
         </View>
       );
     });
@@ -52,7 +38,7 @@ const styles = {
     width: SCREEN_WIDTH
   },
   textStyle: {
-    fontSize: 30,
+    fontSize: 16,
     color: 'white',
     alignItems: 'center'
   },
