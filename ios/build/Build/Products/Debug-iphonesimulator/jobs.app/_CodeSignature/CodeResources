@@ -42,7 +42,7 @@
 		</data>
 		<key>Base.lproj/LaunchScreen.nib</key>
 		<data>
-		0qna9JSxGPLCf5OeDrP1DzdYLN8=
+		QKCLJrzbbCy1tJPl30E8RbLWmBQ=
 		</data>
 		<key>Entypo.ttf</key>
 		<data>
@@ -63,6 +63,47 @@
 		<key>Foundation.ttf</key>
 		<data>
 		SyvObHkkk6SlcWtv7C2+/olJLD8=
+		</data>
+		<key>Frameworks/IDEBundleInjection.framework/IDEBundleInjection</key>
+		<data>
+		zEroulIbyKYhB4EbtbeI4PBJfIQ=
+		</data>
+		<key>Frameworks/IDEBundleInjection.framework/Info.plist</key>
+		<data>
+		ILcX7tpm7WV44s/pfwloERQhInY=
+		</data>
+		<key>Frameworks/IDEBundleInjection.framework/_CodeSignature/CodeResources</key>
+		<data>
+		ffllRjJXzZiQRVS7G4xDUtlIio8=
+		</data>
+		<key>Frameworks/IDEBundleInjection.framework/version.plist</key>
+		<data>
+		aW8T+OYkAq9p7ODvVF4KxOWxpo4=
+		</data>
+		<key>Frameworks/XCTest.framework/Info.plist</key>
+		<data>
+		53QH0QrAmT2lt1KIweV2nkJMArY=
+		</data>
+		<key>Frameworks/XCTest.framework/XCTest</key>
+		<data>
+		Gdkq4my/W+Wncmm9H9gSiFdlbus=
+		</data>
+		<key>Frameworks/XCTest.framework/_CodeSignature/CodeResources</key>
+		<data>
+		NZVWBiJdSoWtOlI5zY2P2Y+YauE=
+		</data>
+		<key>Frameworks/XCTest.framework/en.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			TuBj57ZP6zBqcL9HttO2Rucaw9E=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/XCTest.framework/version.plist</key>
+		<data>
+		0KaQXY+RwumYiFnS4CGdkt22Bi0=
 		</data>
 		<key>GoogleMaps.bundle/GMSCacheStorage.momd/Storage.mom</key>
 		<data>
@@ -736,7 +777,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Lbtsg21RKt+un/pb5LBRnG0SqYo=
+		ACDPLSY+A0X4dJZHE6tlvCWsqdY=
 		</data>
 		<key>Ionicons.ttf</key>
 		<data>
@@ -757,6 +798,26 @@
 		<key>PkgInfo</key>
 		<data>
 		n57qDP4tZfLD1rCS43W0B4LQjzE=
+		</data>
+		<key>PlugIns/jobsTests.xctest.dSYM/Contents/Info.plist</key>
+		<data>
+		rZDPCpLKGCrSk3iYfWe9QXwxz6o=
+		</data>
+		<key>PlugIns/jobsTests.xctest.dSYM/Contents/Resources/DWARF/jobsTests</key>
+		<data>
+		TeHo1nX/7KzgEM5Y109Dc8YjzF4=
+		</data>
+		<key>PlugIns/jobsTests.xctest/Info.plist</key>
+		<data>
+		3ue2MOAVnO9bRECQJsoKj4tAhxk=
+		</data>
+		<key>PlugIns/jobsTests.xctest/_CodeSignature/CodeResources</key>
+		<data>
+		s4jpuc50nhPYar5lMdoGjhG0oBo=
+		</data>
+		<key>PlugIns/jobsTests.xctest/jobsTests</key>
+		<data>
+		Wt3jIWs5hPMY9lnmeypOCQP5FWw=
 		</data>
 		<key>SimpleLineIcons.ttf</key>
 		<data>
@@ -872,11 +933,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0qna9JSxGPLCf5OeDrP1DzdYLN8=
+			QKCLJrzbbCy1tJPl30E8RbLWmBQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			x0eT7tnVsKAFq/YcopQYs67a6jGPeL4hepGwjbBmW/o=
+			IMjvmCvMytrYTM/z5eFK8KPdlVEbvAsnNFW0pqSrAqA=
 			</data>
 		</dict>
 		<key>Entypo.ttf</key>
@@ -932,6 +993,107 @@
 			<key>hash2</key>
 			<data>
 			fh3QPdTOkLZYBSVUzXRZ3xZxZxc4mlUvpMbVal+JM+Y=
+			</data>
+		</dict>
+		<key>Frameworks/IDEBundleInjection.framework/IDEBundleInjection</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zEroulIbyKYhB4EbtbeI4PBJfIQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			k3oG3JgiJzmPGN2TBMBkuyJgDmP+UIM/xucTOritTmg=
+			</data>
+		</dict>
+		<key>Frameworks/IDEBundleInjection.framework/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ILcX7tpm7WV44s/pfwloERQhInY=
+			</data>
+			<key>hash2</key>
+			<data>
+			Ni1kZDOWsRpvUPjR5NX8S4YQkTYRbjePJj2u7AuQarU=
+			</data>
+		</dict>
+		<key>Frameworks/IDEBundleInjection.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ffllRjJXzZiQRVS7G4xDUtlIio8=
+			</data>
+			<key>hash2</key>
+			<data>
+			qDy6gvbQtnrvRUofzsvKB03JHKPL5BYSAPtJhslCor4=
+			</data>
+		</dict>
+		<key>Frameworks/IDEBundleInjection.framework/version.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			aW8T+OYkAq9p7ODvVF4KxOWxpo4=
+			</data>
+			<key>hash2</key>
+			<data>
+			WeHiD6FVZLf1eqm7LA/lcvuqa2Z+RmYEi3Zi/N05M40=
+			</data>
+		</dict>
+		<key>Frameworks/XCTest.framework/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			53QH0QrAmT2lt1KIweV2nkJMArY=
+			</data>
+			<key>hash2</key>
+			<data>
+			W8gDydyYsnKks91l6E6mE/LHCHyTKjEQUmuqbttIm98=
+			</data>
+		</dict>
+		<key>Frameworks/XCTest.framework/XCTest</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Gdkq4my/W+Wncmm9H9gSiFdlbus=
+			</data>
+			<key>hash2</key>
+			<data>
+			1hGMjSnYIuGWvQ8i/bOJDKCFrhrl6q7tYN9xqYAUZrA=
+			</data>
+		</dict>
+		<key>Frameworks/XCTest.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			NZVWBiJdSoWtOlI5zY2P2Y+YauE=
+			</data>
+			<key>hash2</key>
+			<data>
+			4iNtj3HNym8ZSwZTfV6Oa7/IuUDba8eMxDAqB4NPIUU=
+			</data>
+		</dict>
+		<key>Frameworks/XCTest.framework/en.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			TuBj57ZP6zBqcL9HttO2Rucaw9E=
+			</data>
+			<key>hash2</key>
+			<data>
+			89RGkjZaKuewYnjpzwhIswhqfrU8+pcEXqM/DHVrUmo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/XCTest.framework/version.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0KaQXY+RwumYiFnS4CGdkt22Bi0=
+			</data>
+			<key>hash2</key>
+			<data>
+			xDe7lkxC6ot8QncGaSp6qZ9/XbOQA/fGkPvRG+5ksCo=
 			</data>
 		</dict>
 		<key>GoogleMaps.bundle/GMSCacheStorage.momd/Storage.mom</key>
@@ -2278,6 +2440,61 @@
 			<key>hash2</key>
 			<data>
 			NC9CWcIUkNdDyFv9XLIgM5voHcU7RU+sU2mnqmpBMI4=
+			</data>
+		</dict>
+		<key>PlugIns/jobsTests.xctest.dSYM/Contents/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			rZDPCpLKGCrSk3iYfWe9QXwxz6o=
+			</data>
+			<key>hash2</key>
+			<data>
+			JE6OtPDn7mZXXF+dBrhvzGpCf4rvsjMepnWxHwvUehs=
+			</data>
+		</dict>
+		<key>PlugIns/jobsTests.xctest.dSYM/Contents/Resources/DWARF/jobsTests</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			TeHo1nX/7KzgEM5Y109Dc8YjzF4=
+			</data>
+			<key>hash2</key>
+			<data>
+			PdE7S1CYhYlxFoMeKsSQT1FS6PKi8ehBdjtajfeIHZU=
+			</data>
+		</dict>
+		<key>PlugIns/jobsTests.xctest/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			3ue2MOAVnO9bRECQJsoKj4tAhxk=
+			</data>
+			<key>hash2</key>
+			<data>
+			IRpttHspQR5sBKY/QSlXPTSu69WSCPvD/8+9NXsF90U=
+			</data>
+		</dict>
+		<key>PlugIns/jobsTests.xctest/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			s4jpuc50nhPYar5lMdoGjhG0oBo=
+			</data>
+			<key>hash2</key>
+			<data>
+			1ya54UHjuHKhKAof8OjoAQvRXHRk1HgqZDPOz4SYxAM=
+			</data>
+		</dict>
+		<key>PlugIns/jobsTests.xctest/jobsTests</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Wt3jIWs5hPMY9lnmeypOCQP5FWw=
+			</data>
+			<key>hash2</key>
+			<data>
+			BjNYw8Tnmve4bOBS4AjY3KdvK4PewvtcZoIM3afP7y4=
 			</data>
 		</dict>
 		<key>SimpleLineIcons.ttf</key>
