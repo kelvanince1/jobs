@@ -6,6 +6,10 @@ import AuthInput from '../components/AuthInput';
 import validate from '../utility/validation';
 
 class AuthScreen extends Component {
+  static navigatorStyle = {
+    navBarHidden: true
+  };
+  
   state = {
     viewMode: Dimensions.get("window").height > 500 ? "portrait" : "landscape",
     authMode: 'login',

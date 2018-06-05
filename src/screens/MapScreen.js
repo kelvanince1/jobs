@@ -7,6 +7,10 @@ import { fetchJobs, startAddJob, jobAdded } from '../actions/jobActions';
 import JobInput from '../components/AuthInput';
 
 class MapScreen extends Component {
+  static navigatorStyle = {
+    navBarHidden: true
+  };
+
   constructor(props) {
     super(props);
     this.props.navigator.setOnNavigatorEvent(this.onNavigatorEvent);
@@ -77,8 +81,13 @@ class MapScreen extends Component {
 const styles = StyleSheet.create({
   map: {
     width: "100%",
-    height: "85%"
-  }
+    height: "76%"
+  },
+  input: {
+    backgroundColor: '#eee',
+    borderColor: '#bbb',
+    marginTop: 28
+  },
 });
 
 const mapStateToProps = (state) => {

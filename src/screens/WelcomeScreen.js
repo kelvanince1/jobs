@@ -10,6 +10,10 @@ const SLIDE_DATA = [
 ];
 
 class WelcomeScreen extends Component {
+  static navigatorStyle = {
+    navBarHidden: true
+  };
+  
   render() {
     return (
       <Slides data={SLIDE_DATA} />

@@ -10,8 +10,7 @@ const startTabs = () => {
       },
       {
         screen: 'jobs.MapScreen',
-        label: 'Find your job',
-        title: ''
+        label: 'Find your job'
       },
       {
         screen: 'jobs.DeckScreen',
@@ -23,7 +22,7 @@ const startTabs = () => {
         label: 'Review',
         title: ''
       },
-    ]
+    ],
   })
 };
 
