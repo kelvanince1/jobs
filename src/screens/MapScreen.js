@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import { View, StyleSheet, Button } from 'react-native';
+import { View, StyleSheet, Button, TextInput } from 'react-native';
 import MapView from 'react-native-maps';
 import { connect } from 'react-redux';
 
-import { fetchJobs, startAddJob, jobAdded } from '../actions/jobActions'
+import { fetchJobs, startAddJob, jobAdded } from '../actions/jobActions';
+import JobInput from '../components/AuthInput';
 
 class MapScreen extends Component {
   constructor(props) {
@@ -17,7 +18,8 @@ class MapScreen extends Component {
       latitude: 37.773972,
       longitudeDelta: 0.04,
       latitudeDelta: 0.09
-    }
+    },
+    jobTerm: ''
   }
 
   componentDidUpdate() {
@@ -35,16 +37,27 @@ class MapScreen extends Component {
   };
 
   onRegionChangeComplete = (region) => {
-    this.setState({ region: region })
+    this.setState({ region: region });
   }
 
+  onJobTermUpdate = (jobTerm) => {
+    this.setState({ jobTerm: jobTerm });
+  };
+
   onButtonPress = () => {
-    this.props.onFetchJobs(this.state.region);
+    this.props.onFetchJobs(this.state.region, this.state.jobTerm);
   }
 
   render() {
     return (
       <View>
+      <JobInput
+        placeholder='Enter your job search term'
+        style={styles.input}
+        value={this.state.jobTerm}
+        autoCapitalize='none'
+        onChangeText={(val) => this.onJobTermUpdate(val)}
+      />
         <MapView
           initialRegion={this.state.region}
           style={styles.map}
@@ -64,7 +77,7 @@ class MapScreen extends Component {
 const styles = StyleSheet.create({
   map: {
     width: "100%",
-    height: "91%"
+    height: "85%"
   }
 });
 
@@ -76,7 +89,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    onFetchJobs: (region) => dispatch(fetchJobs(region)),
+    onFetchJobs: (region, jobTerm) => dispatch(fetchJobs(region, jobTerm)),
     onStartAddJob: () => dispatch(startAddJob())
   };
 };
