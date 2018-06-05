@@ -68,7 +68,6 @@ class MapScreen extends Component {
           onRegionChangeComplete={this.onRegionChangeComplete}
         />
         <Button
-            large
             title='Search this area'
             backgroundColor='#009688'
             onPress={this.onButtonPress}
@@ -87,7 +86,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#eee',
     borderColor: '#bbb',
     marginTop: 28
-  },
+  }
 });
 
 const mapStateToProps = (state) => {
